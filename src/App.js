@@ -13,7 +13,7 @@ function App() {
       id = todos[0].id + 1
     }
     let todo = {id: id, text: text,completed: false}
-    let newTodos = [todo, ...todos]
+    let newTodos = [...todos, todo]
     setTodos(newTodos)
   };
 
